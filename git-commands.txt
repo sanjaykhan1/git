@@ -1,0 +1,83 @@
+Git commands
+
+First time to configure git bash with git hub
+git config  - -global user.email “emailid”
+git config  - -global user.name “name”
+git config --list  (to see config user name, email id & credentials)
+git clone repo url link (to clone from online repo to local)
+git status (to check the file status)
+git --version (to check version)
+git add . or git add filename (to add a file) (git add . to add all files)
+git commit -m "message" (after adding file we have to commit)
+git push (to push the file to online repo) (sends the recent commit history from our local repository to online GitHub repository) 
+git push origin feature/name (to push the file to particular online branch)
+git checkout -b feature/name (to create a new branch) 
+git log (to see logs)
+git branch (to see the branch local branches - Note: current local branch will be marked with an asterisk (*))
+git branch -r (to see remote branches) 
+git branch -a (to see all local and remote branches)
+git checkout -b branch name (to create new branch)
+git checkout brach name (to switch to other branch) (ex: git checkout feature/try)
+git push origin --delete branch name (To delete a remote branch)
+git branch -d branch name (To delete a local branch) (NOTE: The -d option only deletes the branch if it has already been merged)
+git branch -D my-branch-name (deletes branch, irrespective its merged status) (The -D option is a shortcut for --delete --force)
+git remote -v (to see we are in which repository)
+git fetch (downloads commits, files, and refs from a remote repository into your local repo. 
+          Fetching is what you do when you want to see what everybody else has been working on)
+
+git revert (way to “undo” commits in Git) 
+git pull (grabs any changes from the GitHub repository and merges them into our local repository)
+git rebase (to merge the history of two branches on a repository)
+
+
+Realtime: We should not push the code directly to main branch, we have to create the pull request by using any feature/bugfix/release branches , once PR is approved then we can merge the code form our branch to main branch.
+Branching strategy: Develop branch, Bugfix branch, Release branch, Feature branch
+cd reponame
+
+
+
+ls -ll
+#modify the files
+Create file = CMD: touch filename
+Edit and add the data in file  = CMD: vi filename -> I (insert) ->write the data -> press esc -> :wq! (to save the data)
+Save the file
+
+
+
+SSH Connectivity with GitHUB:
+
+1.  by using this we can create password less authentication
+
+2.  To create the ssh key we use the below command
+
+CMD: ssh-keygen
+
+Note: CMD, GITBASH, Terminal etc…
+
+3. SSH key will generate the PVT-KEY and Public-keys 
+
+Note: Public key we will add in git-hub and other servers based on requirement.
+
+4. SSH key defaukt location : /Users/Username/.SSH/*
+
+5. How to add Publickey in github account
+
+Copy publickey -> go to gitgub account -> select user global settings -> select SSH & GPG Keys -> select SSH keys -> Add New SSH-Key -> Title = git_clone -> in box we need add the Publickey -> add SSH-key.
+
+Graphical user interface, text, application, email
+
+Description automatically generated
+
+ 
+
+6. How to Clone By using SSH-Key:
+
+Select repository -> select code -> here select or click on SSH ->Copy the SSH URL link -> go to desktop on your local server -> open git bash in required locations ->
+
+Git clone ssh URL-LINk -> give Enter -> clone is done.
+
+ 
+
+7. Perform your normal required git-hub operations and push the code to repository.
+
+8. Go to Git-hub location and refresh the page and see the latest changes.
